@@ -74,17 +74,6 @@ class ProductPage extends React.Component{
 
     };
 
-    // descriptionFilter = (description) => {
-    //     return description
-    //       .split(/\\n|\\n\\n/)
-    //       .filter((line) => line.trim() !== '')
-    //       .map((line, index) => (
-    //         <React.Fragment key={index}>
-    //           <span dangerouslySetInnerHTML={{ __html: line.trim() }} />
-    //           <br />
-    //         </React.Fragment>
-    //     ));
-    // };
     descriptionFilter = (description) => {
         return description
             .split(/\\n\\n|\\n/)
