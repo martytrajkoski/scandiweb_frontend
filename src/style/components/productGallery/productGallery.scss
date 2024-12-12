@@ -1,0 +1,62 @@
+$primaryColor: #5ECE7B;
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    .photo-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+  
+      .thumbnail {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        cursor: pointer;
+        border: 2px solid transparent;
+  
+        &.selected {
+          border: 2px solid $primaryColor;
+        }
+      }
+    }
+  
+    .photo-display {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-left: 20px;
+      width: 575px;
+        height: 478px;
+  
+      .selected-photo {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+  
+      .prev-button,
+      .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 16px;
+      }
+  
+      .prev-button {
+        left: 0px;
+      }
+  
+      .next-button {
+        right: 0px;
+      }
+    }
+  }
+  

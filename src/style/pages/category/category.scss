@@ -1,0 +1,19 @@
+.category {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    .category-type {
+        font-weight: 400;
+        font-size: 46px;
+    }
+
+    .category-products {
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        row-gap: 100px; 
+        justify-items: center; 
+        align-items: start; 
+    }
+}
